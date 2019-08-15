@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 
 public class Dog extends Animal {
 
-    Logger log = Logger.getLogger(Cat.class.getName() + " " + Cat.class.getClassLoader());
+    Logger log = Logger.getLogger(Dog.class.getName() + " " + Dog.class.getClassLoader());
 
     public void play() {
         log.log(Level.INFO, "Dog plays");
