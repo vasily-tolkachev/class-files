@@ -1,13 +1,18 @@
-package module_1_java_8;
+package module_2_jvm.task_4;
+
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
 public class Cat extends Animal {
 
+    Logger log = Logger.getLogger(Cat.class.getName() + " " + Cat.class.getClassLoader());
+
     public void play() {
-        System.out.println("Cat plays");
+        log.log(Level.INFO, "Cat plays");
     }
 
 
     public void voice() {
-        System.out.println("Meows");
+        log.log(Level.INFO, "Meows");
     }
 }
